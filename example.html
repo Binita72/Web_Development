@@ -22,16 +22,24 @@
     <link rel="stylesheet" href="master.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col extra">1 of 2</div>
-        <div class="col extra">2 of 2</div>
-      </div>
-      <div class="row">
-        <div class="col extra">1 of 3</div>
-        <div class="col extra">2 of 3</div>
-        <div class="col extra">3 of 3</div>
-      </div>
+    <!-- Example split danger button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Action</button>
+      <button
+        type="button"
+        class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
     </div>
   </body>
 </html>
