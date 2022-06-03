@@ -1,12 +1,14 @@
-class Student():
+class Agents():
 
-    def __init__(self, name, gpa):
+    def __init__(self, name, height, weight, national):
 
         self.name = name
-        self.gpa = gpa
+        self.height = height
+        self.weight = weight
+        self.national = national
 
 
-stud1 = Student(name='Binita', gpa=4.5)
-stud2 = Student(name='Moureen', gpa=4.8)
+ag1 = Agents(name='Binita', height=165, weight=48, national='NPR')
+ag2 = Agents(name='Mou', height=172, weight=68, national='NMB')
 
-print(stud2.gpa)
+print(ag1.national)
