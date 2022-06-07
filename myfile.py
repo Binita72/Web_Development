@@ -1,14 +1,15 @@
-class Agents():
+class Person():
 
-    def __init__(self, name, height, weight, national):
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
 
-        self.name = name
-        self.height = height
-        self.weight = weight
-        self.national = national
+    def hello(self):
+        print("Hello!")
+
+    def report(self):
+        print(f"I am {self.first_name} {self.last_name}")
 
 
-ag1 = Agents(name='Binita', height=165, weight=48, national='NPR')
-ag2 = Agents(name='Mou', height=172, weight=68, national='NMB')
-
-print(ag1.national)
+x = Person("Binita", "Mandal")
+x.hello()
